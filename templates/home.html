@@ -23,6 +23,12 @@
     <br> 
     <ul>
     <h2>Djangoga kirish </h2>
+
+<ul>
+    {%for post in object_list%}
+    <li><h2>{{post.title}}</h2><br> {{post.text}}</li><br>
+    {%endfor%}
+</ul>
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/VdcrHd_BdNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </ul>
